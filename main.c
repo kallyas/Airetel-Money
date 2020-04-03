@@ -8,7 +8,7 @@ Write your code in this editor and press "Run" button to compile and execute it.
 
 #include <stdlib.h>
 
-#include <conio.h>
+//#include <conio.h>
 
 int main() {
       int choice = 0, MobileNumber = 0, Ammount = 0;
@@ -257,7 +257,68 @@ int main() {
                               }
                            break;
                            case 2:
-                              printf("You selected Airtime/Bundles\n");
+                              printf("\n\t\tAirtime/Bundles\n\n");
+                              while(10) {
+                                  printf("\t\t1. Buy Airtime\n");
+                                  printf("\t\t2. Buy Data Bundles\n");
+                                  printf("\t\t3. Buy Voice Bundles\n");
+                                  printf("\t\t4. IControl\n");
+                                  printf("\t\t5. OTT Service Tax\n");
+                                  printf("\t\t6. Exit\n");
+                                  printf("\t\tEnter choice: ");
+                                  scanf("%d", &choice);
+                                  
+                                  switch(choice) {
+                                      case 1:
+                                        printf("\n\t\tBuy Airtime\n\n");
+                                        printf("\t\t1. For MySelt\n");
+                                        printf("\t\t2. For Another Number\n");
+                                        printf("\t\t3. Exit\n");
+                                        printf("\t\tEnter choice: ");
+                                        scanf("%d", &choice);
+                                        
+                                        switch(choice) {
+                                            case 1:
+                                                printf("\t\tEnter Ammount: ");
+                                                scanf("%d", &Ammount);
+                                                printf("\t\tYou have successfuly topped up %d shs on your Number\n\n", Ammount);
+                                                break;
+                                                
+                                            case 2:
+                                                printf("\t\tEnter other Number: ");
+                                                scanf("%d", &MobileNumber);
+                                                printf("\t\tEnter Ammount: ");
+                                                scanf("%d", &Ammount);
+                                                printf("\t\tYou have successfuly topped up %d shs for %d\n\n", Ammount, MobileNumber);
+                                                break;
+                                                
+                                            default :
+                                                printf("\t\tInvalid choice Input! Please Try again!!\n\n");
+                                                break;
+                                        }
+                                        break;
+                                      case 2:
+                                        
+                                        break;
+                                      case 3:
+                                      
+                                        break;
+                                      case 4:
+                                        
+                                        break;
+                                      case 5:
+                                      
+                                        break;
+                                      case 6:
+                                        exit(0);
+                                        break;
+                                        
+                                        break;
+                                      default :
+                                        printf("\t\tInvalid choice Input! Please Try again!!\n\n");
+                                        break;
+                                  }
+                              }
                            break;
                            case 3:
                               printf("You selected Withdraw cash\n");
